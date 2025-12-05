@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>George Abraham — Web Developer</title>
+  <meta name="description" content="Portfolio of George Abraham, Web Developer. Modern, animated, responsive, and accessible.">
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass:rgba(255,255,255,0.05);
+      --radius:14px; --max-width:1200px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#e6eef6;line-height:1.6;display:flex;justify-content:center;padding:20px;}
+    .wrap{width:100%;max-width:var(--max-width)}
+
+    /* HEADER */
+    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:32px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:1000}
+    .logo{width:56px;height:56px;border-radius:12px;overflow:hidden;background:var(--accent);display:flex;align-items:center;justify-content:center;}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    nav a{color:var(--muted);text-decoration:none;margin:0 10px;padding:8px 12px;border-radius:8px;font-size:15px;transition:0.3s}
+    nav a:hover{background:var(--glass);color:#fff}
+
+    /* HERO */
+    .hero{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:28px;}
+    .card{background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:0 0 12px rgba(0,0,0,0.25);transition:transform 0.3s}
+    .card:hover{transform:translateY(-4px)}
+
+    .profile{flex:1;min-width:260px;text-align:center}
+    .avatar{width:140px;height:140px;background:linear-gradient(135deg,var(--accent),#14e3ff);border-radius:50%;display:grid;place-items:center;font-size:42px;font-weight:bold;color:#001018;margin:10px auto 20px;}
+
+    /* SECTIONS */
+    section{margin-bottom:30px}
+    h2{margin-top:0;margin-bottom:18px;font-size:26px;color:#e0f8ff;border-left:4px solid var(--accent);padding-left:10px}
+
+    .section-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+
+    /* SKILLS */
+    .skill-item{margin-bottom:15px}
+    .skill-label{margin-bottom:6px;font-size:14px;color:#cdd6e3;display:flex;justify-content:space-between}
+    .skill-bar{width:100%;height:10px;background:rgba(255,255,255,0.1);border-radius:999px;overflow:hidden}
+    .skill-fill{height:100%;background:var(--accent);border-radius:999px}
+
+    /* PROJECTS */
+    .project-snapshot{height:150px;background:rgba(255,255,255,0.05);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--muted);transition:0.3s}
+    .project-snapshot:hover{background:rgba(255,255,255,0.1)}
+
+    /* CONTACT */
+    input,textarea{width:100%;padding:12px;border-radius:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);color:#fff;margin-bottom:12px}
+    button{padding:12px 16px;border:none;border-radius:8px;background:var(--accent);color:#001018;font-weight:bold;cursor:pointer;width:100%;transition:0.3s}
+    button:hover{opacity:0.9}
+
+    /* FOOTER */
+    footer{text-align:center;padding:20px 12px;background:var(--card);border-radius:var(--radius);margin-top:20px;opacity:0.8}
+
+    /* RESPONSIVE */
+    @media(max-width:800px){ header{flex-direction:column;align-items:flex-start} nav{margin-top:10px} }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo"><img src="img/geor-removebg-preview.png" alt="Logo"></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="card" style="flex:2;">
+      <h1>Hi, I'm <span style="color:var(--accent)">George Abraham</span></h1>
+      <p>I build modern, responsive, and optimized digital experiences. I specialize in front-end development, animations, UI design, and interactive e-commerce solutions that convert visitors into customers.</p>
+      <p><b>Available for Freelance · Remote Work</b></p>
+    </div>
+
+    <div class="card profile">
+      <div class="avatar">AB</div>
+      <p>5+ Years Experience</p>
+      <p>20+ Completed Projects</p>
+      <p>Based in Anywhere</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I’m a creative and detail‑oriented web developer who loves crafting beautiful, user‑friendly digital products. My focus is building fast, accessible, and visually engaging websites that deliver value and measurable business results.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="card">
+    <h2>Services</h2>
+    <div class="section-grid">
+      <div class="card"><h3>Website Development</h3><p>Pixel-perfect websites built with modern standards.</p></div>
+      <div class="card"><h3>E‑commerce Setup</h3><p>Shopify, WooCommerce, and custom shopping solutions.</p></div>
+      <div class="card"><h3>UI/UX Design</h3><p>Clean, intuitive, human-centered interfaces.</p></div>
+      <div class="card"><h3>Landing Pages</h3><p>High‑converting pages with smooth interactions.</p></div>
+      <div class="card"><h3>Website Optimization</h3><p>Speed, SEO, lighthouse fixes, accessibility.</p></div>
+      <div class="card"><h3>Custom Dashboards</h3><p>Interactive UI with charts, tables, and dynamic data.</p></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skill-item"><div class="skill-label">HTML <span>95%</span></div><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">CSS / Flexbox / Grid <span>90%</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">Bootstrap <span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">JavaScript <span>80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">React <span>75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">TypeScript <span>70%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+    <div class="skill-item"><div class="skill-label">Accessibility <span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="section-grid">
+      <div class="card"><div class="project-snapshot">Portfolio</div><h3>Portfolio Template</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+      <div class="card"><div class="project-snapshot">Weather Application</div><h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+       <div class="card"><div class="project-snapshot">Restaurant Ordering</div><h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+       <div class="card"><div class="project-snapshot">Real Estate Website</div><h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+       <div class="card"><div class="project-snapshot">Movie/Series Finder App</div><h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+      <div class="card"><div class="project-snapshot">Task Manager Web App</div><h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+      <div class="card"><div class="project-snapshot"></div>Blogging Platform<h3>Weather Application</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+      <div class="card"><div class="project-snapshot"></div><h3>Online Quiz / Exam App</h3><p>Responsive portfolio built with HTML, CSS, and JS.</p></div>
+      <div class="card"><div class="project-snapshot">E‑commerce</div><h3>E-commerce Demo</h3><p>Smooth UI, animations, product filtering.</p></div>
+      <div class="card"><div class="project-snapshot">Dashboard</div><h3>Admin Dashboard</h3><p>Charts, tables, and interactive UI.</p></div>
+      <div class="card"><div class="project-snapshot">Landing</div><h3>Landing Page</h3><p>High conversion, SEO-friendly marketing page.</p></div>
+      <div class="card"><div class="project-snapshot">Blog</div><h3>Blog Platform</h3><p>Clean UI, tagging system, responsive layouts.</p></div>
+      <div class="card"><div class="project-snapshot">Chat App</div><h3>Realtime Chat App</h3><p>WebSocket-powered messaging UI.</p></div>
+      <div class="card"><div class="project-snapshot">Restaurant</div><h3>Restaurant Ordering</h3><p>Menu filtering, cart, checkout flow.</p></div>
+      <div class="card"><div class="project-snapshot">Weather</div><h3>Weather Dashboard</h3><p>API-powered data visualization.</p></div>
+      <div class="card"><div class="project-snapshot">UI Kit</div><h3>UI Component Library</h3><p>Reusable UI components, accessible design.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="card"><p>&copy; 2025 George Abraham — All Rights Reserved</p></footer>
+</div>
+
+<script>
+  document.querySelector('#contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Message sent successfully (simulation)');
+    this.reset();
+  });
+</script>
+</body>
+</html>
